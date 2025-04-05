@@ -1,0 +1,284 @@
+/* CollegeListing.css */
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 700;
+}
+.college-listing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Header Section */
+  .header-section {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .header-section h1 {
+    font-size: 2.5rem;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header-section p {
+    font-size: 1.1rem;
+    color: #4a5568;
+  }
+  
+  /* Filter Section */
+  .filter-section {
+    background-color: #f7fafc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .search-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+  }
+  
+  .filter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .filter-group h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #2d3748;
+  }
+  
+  .filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .filter-tag {
+    background-color: #edf2f7;
+    border: none;
+    border-radius: 16px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.875rem;
+    color: #4a5568;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .filter-tag:hover {
+    background-color: #e2e8f0;
+  }
+  
+  .filter-tag.active {
+    background-color: #4299e1;
+    color: white;
+  }
+  
+  .reset-button {
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    align-self: flex-start;
+    margin-top: 0.5rem;
+  }
+  
+  .reset-button:hover {
+    background-color: #c53030;
+  }
+  
+  /* Results Info */
+  .results-info {
+    margin-bottom: 1rem;
+  }
+  
+  .results-info p {
+    font-size: 0.875rem;
+    color: #718096;
+  }
+  
+  /* Colleges Grid */
+  .colleges-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .college-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+  }
+  
+  .college-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .college-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .college-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .college-card:hover .college-image img {
+    transform: scale(1.05);
+  }
+  
+  .college-info {
+    padding: 1.5rem;
+  }
+  
+  .college-info h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #1a202c;
+    line-height: 1.4;
+  }
+  
+  .college-location {
+    color: #718096;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  .college-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+    color: #4a5568;
+  }
+  
+  .college-tuition {
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1rem;
+  }
+  
+  .college-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .college-tag {
+    background-color: #f0f4f8;
+    color: #4a5568;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+  }
+  
+  .view-button {
+    width: 100%;
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .view-button:hover {
+    background-color: #3182ce;
+  }
+  
+  /* No Results */
+  .no-results {
+    text-align: center;
+    padding: 3rem 0;
+  }
+  
+  .no-results h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+  }
+  
+  .no-results p {
+    color: #718096;
+    margin-bottom: 1.5rem;
+  }
+  
+  .no-results .reset-button {
+    margin: 0 auto;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (min-width: 640px) {
+    .colleges-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    
+    .filter-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    
+    .filter-group {
+      flex: 1 1 45%;
+      min-width: 250px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .college-listing-container {
+      padding: 3rem 2rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .colleges-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .filter-group {
+      flex: 1 1 30%;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .colleges-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+  }
